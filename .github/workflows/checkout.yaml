@@ -4,16 +4,11 @@ on: [push]
 jobs:
   checkout-action:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: /home/runner
     steps:
       - name: Before checkout action
         run: ls -a
       - name: Checkout Action
         uses: actions/checkout@v4
-        with:
-          path: /home/runner
       - name: After checkout action
         run: ls -a
 
