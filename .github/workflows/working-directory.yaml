@@ -1,5 +1,8 @@
 name: Working Directory
 on: [push]
+defaults:
+  run:
+    shell: bash
 
 jobs:
   display-wd-info:
