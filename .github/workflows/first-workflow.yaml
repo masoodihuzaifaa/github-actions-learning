@@ -1,0 +1,14 @@
+name: First Workflow
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing
+        run: echo "First Workflow"
+      - name: Multiple Commands
+        run: |
+          node -v
+          python -V
+          npm -v
