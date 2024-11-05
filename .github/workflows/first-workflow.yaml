@@ -12,3 +12,16 @@ jobs:
           node -v
           python -V
           npm -v
+  parellel-execution:
+    runs-on: macos-latest
+    steps:
+      - name: View SW Version
+        run: sw_vers
+  dependent-job:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: Echo
+        run: Write-Output "Windows String"
+      - name: Error Step
+        run: doesnotexist
