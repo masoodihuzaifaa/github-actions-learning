@@ -10,8 +10,8 @@ jobs:
       - name: Setting an error message with params
         run: echo "::error title=Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
       - name: Setting an debug message with params
-        run: echo "::error title=Debug title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
+        run: echo "::debug title=Debug title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
       - name: Setting an warning message with params
-        run: echo "::error title=Warning title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
+        run: echo "::warning title=Warning title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
       - name: Setting an notice message with params
-        run: echo "::error title=Notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
+        run: echo "::notice title=Notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semilon"
