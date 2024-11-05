@@ -1,0 +1,11 @@
+name: Test Internal Repository Events
+on: [push, pull_request, issues]
+
+jobs:
+  repo-events:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
+      - uses: actions/checkout@v4
